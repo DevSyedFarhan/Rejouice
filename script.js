@@ -92,7 +92,7 @@ tl
 
 .from(".elemh4",{
     y: 120,
-    stager:0.1,
+    stagger:0.1,
     duration:1,
     opacity:0,
     ease : Power1,
@@ -108,3 +108,51 @@ tl
 }
 
 page2Animation();
+
+function page4Animation(){
+    let tl = gsap.timeline();
+tl
+.from("#page4",{
+    y: 10,
+    opacity:0,
+    stager:0.2,
+    duration:.7,
+    ease : Power1,
+    scrollTrigger :{
+        trigger : "#page4",
+        scroller : "#main",
+        start : "top 40%",
+        end : "top 37%",
+        scrub : 5,
+    }
+})
+.from("#p4-line",{
+    width: 0,
+    duration:1,
+    delay: .5,
+    ease : Power1,
+    scrollTrigger :{
+        trigger : "#page4",
+        scroller : "#main",
+        start : "top 40%",
+        end : "top 37%",
+        scrub : 5,
+    }
+})
+.from(".elemh5",{
+    y : 120,
+    opacity: 0,
+    duration: 1,
+    stagger: .1,
+    ease: Power1,
+    scrollTrigger :{
+        trigger : "#page4",
+        scroller : "#main",
+        start : "top 40%",
+        end : "top 37%",
+        scrub : 5,
+    }
+})
+}
+
+page4Animation();
