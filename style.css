@@ -25,10 +25,37 @@ html,body{
     overflow: hidden;
 }
 
+#cursor{
+    height: 7.5vw;
+    width: 7.5vw;
+    background-color: #FC5819;
+    border-radius: 50%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9;
+    transform: translate(-50%, -50%);
+}
+
+#cursor h4{
+    font-weight: 100;
+    font-size: 1vw;
+    
+}
+
 #page1 video{
     height: 100%;
     width: 100%;
     object-fit: cover;
+    position: absolute;
+}
+
+#overlay{
+    height: 100vh;
+    width: 100%;
+    z-index: 8;
+    background-color: rgba(0, 0, 0, 0.164);
     position: absolute;
 }
 
@@ -39,10 +66,10 @@ html,body{
     justify-content: space-between;
     height: 100%;
     width: 100%;
-    background-color: #0000003f;
     position: relative;
+    z-index: 10;
+    
 }
-
 #page1-content nav{
     width: 100%;
     display: flex;
@@ -70,4 +97,43 @@ nav a{
     font-weight: 400;
     line-height: 20vw;
     font-family: Rejouice-headline;
+}
+
+#page2{
+    position: relative;
+    height: 70vh;
+    width: 100%;
+    padding: 8vh 5vh;
+}
+
+#p2-top{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#p2-top h4{
+    font-weight: 100;
+    font-size: 1.5vw;
+}
+
+#p2-line{
+    margin-top: 2vh;
+    width: 100%;
+    height: 0.5px;
+    background: rgba(0, 0, 0, 0.445);
+}
+#p2-mid{
+    margin-top: 1.5vh;
+}
+#p2-mid h4{
+    font-size: 4vw;
+    font-weight: 400;
+    overflow-y: hidden;
+}
+
+#page3{
+    min-height: 100vh;
+    width: 100%;
 }

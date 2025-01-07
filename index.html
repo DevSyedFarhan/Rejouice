@@ -3,14 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home | REJOUICE®</title>
+    <link rel="shortcut icon" href="./icon/favicon_io/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="main">
         <div id="page1">
+            <div id="overlay"></div>
+            <div id="cursor">
+                <h4>Play Reel</h4>
+            </div>
             <video autoplay loop muted src="./Videos/658ef98d531ac2845a270509_RJ-2-0-Videobackground_compressed.mp4"></video>
-
             <div id="page1-content">
                 <nav>
                     <h3>The Growth Accelerator.</h3>
@@ -21,14 +26,25 @@
                 </h1>
             </div>
         </div>
+        <div id="page2">
+            <div id="p2-top">
+                <h4>Tomorrow’s Brands, Today™</h4>
+                <h4>Paris / San Diego</h4>
+            </div>
+            <div id="p2-line"></div>
+            <div id="p2-mid">
+                <h4><div class="elemh4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We use the power of narrative, design & </div><div class="elemh4">technology to transform founder's visions into</div><div class="elemh4"> remarkable brands. We focus on premium, luxury</div> <div class="elemh4">and tech brands. We also offer two engagement</div> <div class="elemh4">models, Agency & Venture. Your vision, your choice.</div></h4>
+            </div>
+        </div>
+        <div id="page3"></div>
     </div>
 
 
 
 
-
-
-    
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
 </body>
 </html>
