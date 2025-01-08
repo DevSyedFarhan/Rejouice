@@ -32,12 +32,6 @@ ScrollTrigger.refresh();
 
 loco();
 
-gsap.from("#page1 h1",{
-    y : 20,
-    duration: 1,
-    opacity: 0,
-    ease : Expo.easeInOut,
-})
 
 function cursorEffect(){
     let page1Content = document.querySelector("#page1-content");
@@ -246,3 +240,43 @@ tl
 }
 
 page5Animation();
+
+function swipper(){
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: true,
+    },
+});
+}
+
+swipper();
+
+function loader(){
+    let tl = gsap.timeline();
+
+tl.from("#loader h3",{
+    x: 35,
+    stagger : 0.1,
+    opacity: 0,
+    duration: 1,
+})
+tl.to("#loader h3",{
+    x: -35,
+    stagger : 0.1,
+    opacity: 0,
+    duration: 1,
+})
+tl.to("#loader",{
+    opacity: 0,
+    duration: 1,
+})
+tl.to("#loader",{
+    display : "none",
+})
+}
+
+loader();
