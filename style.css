@@ -132,6 +132,7 @@ nav a{
     font-size: 4vw;
     font-weight: 400;
     overflow-y: hidden;
+    line-height: 1;
 }
 
 #page3{
@@ -201,6 +202,7 @@ nav a{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: all 0.3s ease;
 }
 
 #page3-elements .box{
@@ -261,5 +263,96 @@ nav a{
 #p4-mid .elemh5{
     overflow-y: hidden;
     font-size: 4vw;
+    line-height: 1;
     font-weight: 400;
+}
+#cursorblack h6{
+    font-weight: 100;
+    font-size: 1.2vw;
+    color:white
+}
+
+#page4 #gradient-video{
+    padding-top: 5vh;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#gradient-video>video{
+    height: 100%;
+}
+
+#gradient-video>svg{
+    position: absolute;
+    height: 30%;
+}
+
+#videotext{
+    position: absolute;
+    text-align: center;
+    color: #FAF8F3;
+}
+
+#videotext>h6{
+    font-size: 4vw;
+}
+
+#page5{
+    min-height: 100vh;
+    width: 100%;
+    padding: 8vh 4.5vh;
+}
+
+#p5-top{
+    width: 100%;
+}
+
+#p5-top h4{
+    font-weight: 100;
+    font-size: 1.5vw;
+}
+
+#p5-line{
+    margin-top: 2vh;
+    width: 100%;
+    height: 0.5px;
+    background: rgba(0, 0, 0, 0.445);
+}
+
+#p5-mid{
+    margin-top: 1.5vh;
+    overflow: hidden;
+}
+
+#p5-mid .elemh6{
+    overflow-y: hidden;
+    font-size: 4vw;
+    line-height: 1.1;
+    font-weight: 400;
+}
+
+#content5{
+    position: relative;
+    margin-top: 5vw;
+    height: 12vw;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid black;
+}
+#content5>h1{
+    font-size: 10vw;
+    font-weight: 500;
+    font-family: Rejouice-headline;
+
+}
+
+#content #lf5{
+    padding-bottom: 5vw;
+    width: 50%;
+    display: flex;
 }

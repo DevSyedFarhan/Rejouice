@@ -32,6 +32,13 @@ ScrollTrigger.refresh();
 
 loco();
 
+gsap.from("#page1 h1",{
+    y : 20,
+    duration: 1,
+    opacity: 0,
+    ease : Expo.easeInOut,
+})
+
 function cursorEffect(){
     let page1Content = document.querySelector("#page1-content");
     let cursor = document.querySelector("#cursor");
@@ -113,7 +120,7 @@ function page4Animation(){
     let tl = gsap.timeline();
 tl
 .from("#page4",{
-    y: 10,
+    y: 40,
     opacity:0,
     stager:0.2,
     duration:.7,
@@ -142,7 +149,7 @@ tl
 .from(".elemh5",{
     y : 120,
     opacity: 0,
-    duration: 1,
+    duration: .5,
     stagger: .1,
     ease: Power1,
     scrollTrigger :{
@@ -156,3 +163,86 @@ tl
 }
 
 page4Animation();
+
+function animationgd(){
+    let tl = gsap.timeline();
+tl.from("#gradient-video h6 span",{
+    y : 100,
+    stagger:0.2,
+    opacity: 0,
+    duration:1,
+    ease: Power1,
+    scrollTrigger: {
+        trigger: "#gradient-video",
+        scroller : "#main",
+        start : "top 40%",
+        end : "top 37%",
+        scrub : 5,
+    }
+})
+
+.to("#gradient-video svg",{
+    rotate : 220,
+    duration:1,
+    ease: Power1,
+    scrollTrigger: {
+        trigger: "#gradient-video",
+        scroller : "#main",
+        start : "top 40%",
+        end : "top 37%",
+        scrub : 5,
+    }
+})
+
+}
+
+animationgd();
+
+function page5Animation(){
+let tl= gsap.timeline();
+
+tl
+.from("#page5",{
+    y: 40,
+    opacity:0,
+    stager:0.2,
+    duration:.7,
+    ease : Power1,
+    scrollTrigger :{
+        trigger : "#page5",
+        scroller : "#main",
+        start : "top 60%",
+        end : "top 37%",
+        scrub : 5,
+    }
+})
+.from("#p5-line",{
+    width: 0,
+    duration:1,
+    delay: .5,
+    ease : Power1,
+    scrollTrigger :{
+        trigger : "#page5",
+        scroller : "#main",
+        start : "top 60%",
+        end : "top 37%",
+        scrub : 5,
+    }
+})
+.from(".elemh6",{
+    y : 120,
+    opacity: 0,
+    duration: .5,
+    stagger: .1,
+    ease: Power1,
+    scrollTrigger :{
+        trigger : "#page5",
+        scroller : "#main",
+        start : "top 60%",
+        end : "top 37%",
+        scrub : 5,
+    }
+})
+}
+
+page5Animation();
