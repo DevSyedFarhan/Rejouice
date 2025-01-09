@@ -110,6 +110,44 @@ tl
 
 page2Animation();
 
+function page3Animation(){
+    let tl = gsap.timeline();
+tl
+.from("#page3-top h5,i",{
+    y: 30,
+    opacity:0,
+    stager:0.1,
+    duration:.7,
+    ease : Power1,
+    scrollTrigger :{
+        trigger : "#page3",
+        scroller : "#main",
+        start : "top 60%",
+        end : "top 40%",
+        scrub : 5,
+    }
+})
+.from("#page3-top h1",{
+    y: 50,
+    opacity:0,
+    stager:0.3,
+    duration:1,
+    ease : Power1,
+    scrollTrigger :{
+        trigger : "#page3",
+        scroller : "#main",
+        start : "top 60%",
+        end : "top 40%",
+        scrub : 5,
+    }
+})
+
+}
+
+page3Animation();
+
+
+
 function page4Animation(){
     let tl = gsap.timeline();
 tl
@@ -277,6 +315,76 @@ tl.to("#loader",{
 tl.to("#loader",{
     display : "none",
 })
+tl.from("#page1-content h1 span",{
+    y: 100,
+    stagger :0.1,
+    opacity: 0,
+    duration:0.5,
+    delay : -1,
+})
+
+
 }
 
 loader();
+
+let tl = gsap.timeline();
+
+tl.from("#page6 h2",{
+    y: 10,
+    opacity: 0,
+    duration:0.5,
+    ease : Power1,
+    scrollTrigger :{
+        trigger : "#page6",
+        scroller : "#main",
+        start : "top 70%",
+        end : "top 37%",
+        scrub : 5,
+    }
+})
+tl.from(".line6",{
+    width: 0,
+    opacity: 0,
+    stagger:1,
+    duration:0.5,
+    ease : Power1,
+    scrollTrigger :{
+        trigger : "#page6",
+        scroller : "#main",
+        start : "top 70%",
+        end : "top 37%",
+        scrub : 5,
+    }
+})
+
+tl.from("#page6 h1 span",{
+    y: 100,
+    stagger :0.1,
+    opacity: 0,
+    duration:0.5,
+    ease : Power1,
+    scrollTrigger :{
+        trigger : "#page6",
+        scroller : "#main",
+        start : "top 60%",
+        end : "top 37%",
+        scrub : 5,
+    }
+})
+
+
+tl.from("#page6 #text6",{
+    y: 100,
+    stagger :0.1,
+    opacity: 0,
+    duration:0.5,
+    ease : Power1,
+    scrollTrigger :{
+        trigger : "#page6",
+        scroller : "#main",
+        start : "top 60%",
+        end : "top 37%",
+        scrub : 5,
+    }
+})
